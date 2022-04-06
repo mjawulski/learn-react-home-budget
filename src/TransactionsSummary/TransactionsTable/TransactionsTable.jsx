@@ -8,7 +8,12 @@ export function TransactionsTable({ transactions }) {
 			{transactions.map(transaction => {
 				return <TransactionsTableRow transaction={transaction} />;
 			})}
-			<AmountSummary transactions={transactions} />
+			<tr>
+				<td>
+					{' '}
+					<AmountSummary transactions={transactions} />
+				</td>
+			</tr>
 		</table>
 	);
 }
